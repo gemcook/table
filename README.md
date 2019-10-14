@@ -41,9 +41,37 @@ yarn add @gemcook/table
 
 ### Remote Pagination
 
+
 ## Example
 
 ```jsx
+
+```
+
+
+```tsx
+import {Table} from '@gemcook/table'
+
+const App: React.FC = () => {
+
+
+  return (
+        <Table
+        current={1}
+        updateCurrent={(num:number)=>{console.log("n")}} //
+        disabled={false}
+        loading={true}
+        active={[{id: 1, name: "Apple", price: 5},{id: 2, name: "orange", price: 10},{id: 3, name: "Banana", price: 7}]}
+        totalCount={30}
+        pageSize={10}
+        columns={[{Header: "ID", accessor: "id"}, {Header: "Name", accessor: "name"}, {Header: "Price", accessor: "price"}]}
+        >
+        </Table>     
+         );
+  }
+
+export default App;
+
 ```
 
 ## Documentaion
