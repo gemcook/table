@@ -6,10 +6,6 @@
 
 React Table Component.
 
-## Online Demo
-
-* https://table.storybook.gemcook.com
-
 ## Installation
 
 ```shell
